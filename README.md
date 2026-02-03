@@ -115,4 +115,4 @@ We evaluate 24 trackers on UAV2UAV-2 (test set) and report key metrics (Precisio
 The full dataset (test videos, training images, annotations) and pre-trained models are available on GitHub Releases:  
 [UAV2UAV-2 Dataset & Models](https://github.com/hapless19/UAV2UAV-2/releases)
 
-### Dataset Structure
+###📜 Citation
