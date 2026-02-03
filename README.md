@@ -113,6 +113,6 @@ If you find our work or dataset useful for your research, please cite:
 @inproceedings{li2025aerial,
   title={Tracking A Fixed-Wing Unmanned Aerial Vehicle: An Experimental Evaluation},
   author={Wang, Y. and Zhu, X. and Sun, Z. and Robert, L. and Lu, D.},
-  booktitle={},
+  booktitle={Applied Intelligence},
   year={2025}
 }
