@@ -30,9 +30,6 @@ Tracking fixed-wing unmanned aerial vehicles (UAVs) plays a pivotal role in aero
 * [Experimental Results](#📊-experimental-results)
 * [Dataset Download](#📥-dataset-download)
 * [Citation](#📜-citation)
-* [License](#⚖️-license)
-* [Contact](#📞-contact)
-
 ---
 
 ## 🚀 Introduction
@@ -79,23 +76,23 @@ Existing datasets either lack training data, cover limited scenarios, or fail to
 ## 📊 Experimental Results
 ### Quantitative Comparison
 <p align="center">
-  <img src="./figures/qualitative_results.png" width="600">
+  <img src="figures/Tracking_Result_UAV2UAV-2_HandCrafted.png" width="600">
   <br>
-  <em>Figure 4: Qualitative comparison of tracking results under illumination variation, scale change, and motion blur. KYS-trained outperforms other methods.</em>
+  <em>Figure 3: : Success and precisions plots of the tracking results on the UAV2UAV-2 dataset with 11 kinds of hand-crafted based tracking algorithms..</em>
 </p>
 
 ### Visualization
 <p align="center">
   <img src="figure/Tracking_Result_Visualization.png" width="600">
   <br>
-  <em>Figure 4: Qualitative comparison of tracking results under illumination variation, scale change, and motion blur. KYS-trained outperforms other methods.</em>
+  <em>Figure 4: Qualitative results of five methods in three typical difficult challenges.</em>
 </p>
 
 ---
 
 ## 📥 Dataset Download
 The full dataset (test videos, training images, annotations) and pre-trained models are available on GitHub Releases:  
-[UAV2UAV-2 Dataset & Models](https://github.com/hapless19/UAV2UAV-2/releases)
+[UAV2UAV-2 Dataset ]
 
 ## 📜 Citation
 If you find our work or dataset useful for your research, please cite:
