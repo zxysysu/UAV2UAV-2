@@ -86,7 +86,7 @@ Existing datasets either lack training data, cover limited scenarios, or fail to
 
 ### Visualization
 <p align="center">
-  <img src="figures/Tracking_Result_Visualization.png" width="600">
+  <img src="figure/Tracking_Result_Visualization.png" width="600">
   <br>
   <em>Figure 4: Qualitative comparison of tracking results under illumination variation, scale change, and motion blur. KYS-trained outperforms other methods.</em>
 </p>
