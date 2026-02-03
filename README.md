@@ -58,7 +58,7 @@ Existing datasets either lack training data, cover limited scenarios, or fail to
 <p align="center">
   <img src="figure/Examples.png" width="600">
   <br>
-  <em>Figure 2: Sample frames from UAV2UAV-2, demonstrating key challenges (low resolution, motion blur, background clutter, etc.).</em>
+  <em>Figure 2: Sample frames from UAV2UAV-2.</em>
 </p>
 
 ### Dataset Specifications
