@@ -72,12 +72,7 @@ Existing datasets either lack training data, cover limited scenarios, or fail to
 | Covered Challenges | 9 types (low resolution, motion blur, illumination variation, background clutter, viewpoint change, deformation, scale variation, rotation, fast moving) |
 | Annotation Format | JSON (bounding box coordinates: [x1, y1, x2, y2]) |
 
-### Dataset Distribution
-<p align="center">
-  <img src="./figures/dataset_distribution.png" width="600">
-  <br>
-  <em>Figure 3: Distribution of target scale and challenge types in UAV2UAV-2.</em>
-</p>
+
 
 ---
 
@@ -91,7 +86,7 @@ Existing datasets either lack training data, cover limited scenarios, or fail to
 
 ### Visualization
 <p align="center">
-  <img src="./figures/qualitative_results.png" width="600">
+  <img src="figures/Tracking_Result_Visualization.png" width="600">
   <br>
   <em>Figure 4: Qualitative comparison of tracking results under illumination variation, scale change, and motion blur. KYS-trained outperforms other methods.</em>
 </p>
