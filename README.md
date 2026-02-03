@@ -6,12 +6,7 @@
 ---
 
 ## 👨‍💻 Authors
-**Yong Wang** (Sun Yat-sen University),  
-**Xiangyu Zhu** (Sun Yat-sen University),  
-**Zhiyang Sun** (Sun Yat-sen University),  
-**Robert Laganiere** (University of Ottawa),  
-**Lu Ding** (Guangxi University)  
-
+**Yong Wang** (Sun Yat-sen University),  **Xiangyu Zhu** (Sun Yat-sen University),  **Zhiyang Sun** (Sun Yat-sen University),  **Robert Laganiere** (University of Ottawa),  **Lu Ding** (Guangxi University)  
 ---
 
 ## 🖼️ Overview
