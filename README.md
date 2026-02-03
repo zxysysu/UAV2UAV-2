@@ -99,7 +99,7 @@ Existing datasets either lack training data, cover limited scenarios, or fail to
 <p align="center">
   <img src="figure/Tracking_Result_Visualization.png" width="600">
   <br>
-  <em>Figure 4: Qualitative results of five methods in three typical difficult challenges.</em>
+  <em>Figure 7: Qualitative results of five methods in three typical difficult challenges.</em>
 </p>
 
 ---
