@@ -76,9 +76,24 @@ Existing datasets either lack training data, cover limited scenarios, or fail to
 ## 📊 Experimental Results
 ### Quantitative Comparison
 <p align="center">
-  <img src="figures/Tracking_Result_UAV2UAV-2_HandCrafted.png" width="600">
+  <img src="figure/Tracking_Result_UAV2UAV-2_HandCrafted.png" width="600">
   <br>
-  <em>Figure 3: : Success and precisions plots of the tracking results on the UAV2UAV-2 dataset with 11 kinds of hand-crafted based tracking algorithms..</em>
+  <em>Figure 3: Success and precisions plots of the tracking results on the UAV2UAV-2 dataset with 11 kinds of hand-crafted based tracking algorithms.</em>
+</p>
+<p align="center">
+  <img src="figure/Tracking_Result_UAV2UAV-12_HandCrafted.png" width="600">
+  <br>
+  <em>Figure 4: Success and precisions plots of the tracking results on the UAV2UAV-1 and UAV2UAV-2 datasets with 11 kinds of hand-crafted based tracking algorithms.</em>
+</p>
+<p align="center">
+  <img src="figure/Tracking_Result_UAV2UAV-2_DEEP.png" width="600">
+  <br>
+  <em>Figure 5: Success and precisions plots of the tracking results on the UAV2UAV-2 dataset with 15 kinds of deep-learning based tracking algorithms.</em>
+</p>
+<p align="center">
+  <img src="figure/Tracking_Result_UAV2UAV-12_DEEP.png" width="600">
+  <br>
+  <em>Figure 6: Success and precisions plots of the tracking results on the UAV2UAV-1 and UAV2UAV-2 datasets with 15 kinds of deep-learning based tracking algorithms.</em>
 </p>
 
 ### Visualization
