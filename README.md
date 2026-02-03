@@ -11,7 +11,7 @@
 
 ## 🖼️ Overview
 <p align="center">
-  <img src="./figures/dataset_overview.png" width="600">
+  <img src="./figures/Representative.png" width="600">
   <br>
   <em>Figure 1: Overview of UAV2UAV-2 tracking scenarios (covering 9 core challenges).</em>
 </p>
