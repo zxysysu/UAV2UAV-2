@@ -1,28 +1,123 @@
-# UAV2UAV-2
+# UAV2UAV-2: A Large-Scale Benchmark for Fixed-Wing UAV-to-UAV Tracking
 
-![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
-![Python 3.8+](https://img.shields.io/badge/python-3.8+-green.svg)
-![Dataset Status](https://img.shields.io/badge/dataset-available-orange.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Dataset: UAV2UAV-2](https://img.shields.io/badge/Dataset-UAV2UAV--2-blue.svg)](https://github.com/hapless19/UAV2UAV-2)
 
-## Project Overview
-This project corresponds to the paper **"Tracking A Fixed-Wing Unmanned Aerial Vehicle: An Experimental Evaluation"** by Yong Wang, Xiangyu Zhu, Zhiyang Sun, Robert Laganiere, and Lu Ding. The core contribution is the construction of the **UAV2UAV-2 dataset**—a large-scale, high-diversity benchmark for fixed-wing UAV tracking—filling the gap in the UAV-to-UAV (UAV2UAV) tracking domain, where high-quality training data and comprehensive evaluation benchmarks are lacking.
+---
 
-## Key Contributions
-1. Developed the **UAV2UAV-2 benchmark dataset**: Includes 49 high-definition test videos (27k+ frames) and 4.8k+ training images, covering 9 core challenges in UAV tracking.
-2. Provided evaluation results for **24 state-of-the-art tracking algorithms**: Compared performance differences between hand-crafted feature-based and deep learning-based trackers.
-3. Open-sourced **3 fine-tuned high-performance trackers**: KYS-trained, Dimp18-trained, and PrDimp-trained, improving the accuracy and success rate of fixed-wing UAV tracking.
+## 👨‍💻 Authors
+**Yong Wang** (Sun Yat-sen University),  
+**Xiangyu Zhu** (Sun Yat-sen University),  
+**Zhiyang Sun** (Sun Yat-sen University),  
+**Robert Laganiere** (University of Ottawa),  
+**Lu Ding** (Guangxi University)  
 
-## Dataset Overview
-| Data Type | Specifications |
-|-----------|----------------|
-| Test Videos | 49 sequences (30fps, 3840×2160 resolution) |
-| Total Frames | 27,000+ (each frame with precise bounding box annotations) |
-| Training Images | 4,800+ images (1280×720 resolution) |
-| Covered Challenges | 9 types (low resolution, motion blur, illumination variation, background clutter, etc.) |
-| Annotation Format | JSON (bounding box coordinates [x1, y1, x2, y2]) |
+---
 
-## Quick Start
-### 1. Clone the Repository
-```bash
-git clone https://github.com/hapless19/UAV2UAV-2.git
-cd UAV2UAV-2
+## 🖼️ Overview
+<p align="center">
+  <img src="./figures/dataset_overview.png" width="600">
+  <br>
+  <em>Figure 1: Overview of UAV2UAV-2 tracking scenarios (covering 9 core challenges).</em>
+</p>
+
+---
+
+## 📌 Abstract
+Tracking fixed-wing unmanned aerial vehicles (UAVs) plays a pivotal role in aerospace applications such as airspace security, formation flight, and counter-UAV missions. However, the lack of large-scale, high-diversity benchmark datasets has hindered the development and comprehensive evaluation of UAV-to-UAV (UAV2UAV) tracking algorithms. To address this gap, we present **UAV2UAV-2**—a state-of-the-art benchmark dataset consisting of 49 high-definition video sequences (27k+ frames) and 4.8k+ training images. The dataset features diverse backgrounds, extreme motion patterns, and realistic imaging challenges (e.g., motion blur, low resolution, illumination variations) that are inherent to fixed-wing UAV tracking. We conduct extensive evaluations of 24 state-of-the-art tracking algorithms (11 hand-crafted feature-based, 13 deep learning-based) and fine-tune 3 representative trackers (KYS, Dimp18, PrDimp) on our training dataset. Experimental results demonstrate that dedicated training data significantly improves tracking performance, with KYS-trained achieving the best success rate (61.6%) and precision (65.8%). Our dataset and code aim to advance research in UAV2UAV tracking by providing a rigorous evaluation platform for future algorithms.
+
+---
+
+## 📂 Table of Contents
+* [Introduction](#🚀-introduction)
+* [Contributions](#💡-contributions)
+* [Quick View (Dataset)](#📸-quick-view-dataset)
+* [Experimental Results](#📊-experimental-results)
+* [Dataset Download](#📥-dataset-download)
+* [Citation](#📜-citation)
+* [License](#⚖️-license)
+* [Contact](#📞-contact)
+
+---
+
+## 🚀 Introduction
+Fixed-wing UAVs are widely used in civilian and military applications due to their long endurance and high maneuverability. However, UAV2UAV tracking—where a UAV tracks another fixed-wing UAV—poses unique challenges that distinguish it from generic object tracking:
+- **Small & Featureless Targets:** Fixed-wing UAVs occupy <100 pixels in most frames, lacking distinct texture or shape features.
+- **Dynamic & Complex Backgrounds:** Rapid ego-motion of the tracking UAV and diverse environments (sky, urban, rural) cause target-background blending.
+- **Extreme Motion & Imaging Degradation:** Out-of-plane rotation, fast motion, and motion blur lead to severe target appearance changes.
+
+Existing datasets either lack training data, cover limited scenarios, or fail to capture the specific challenges of fixed-wing UAV tracking. UAV2UAV-2 fills this gap by providing a large-scale, realistic benchmark for algorithm development and evaluation.
+
+---
+
+## 💡 Contributions
+* **Large-Scale Benchmark Dataset:** Introduce UAV2UAV-2 with 49 test videos (27k+ frames, 3840×2160 resolution) and 4.8k+ training images, covering 9 core tracking challenges.
+* **Comprehensive Algorithm Evaluation:** Benchmark 24 state-of-the-art trackers (hand-crafted and deep learning-based) to provide insights into their performance on UAV2UAV scenarios.
+* **Effective Training Strategy:** Validate that fine-tuning trackers on dedicated UAV data improves performance, with open-sourced fine-tuned models (KYS-trained, Dimp18-trained, PrDimp-trained).
+* **Rigorous Annotation:** Provide high-precision bounding box annotations via a three-stage process (manual annotation → visual inspection → refinement) to ensure reliability.
+
+---
+
+## 📸 Quick View (Dataset)
+### Dataset Samples
+<p align="center">
+  <img src="./figures/challenge_samples.png" width="600">
+  <br>
+  <em>Figure 2: Sample frames from UAV2UAV-2, demonstrating key challenges (low resolution, motion blur, background clutter, etc.).</em>
+</p>
+
+### Dataset Specifications
+| Attribute | Details |
+|-----------|---------|
+| Test Videos | 49 sequences (30fps) |
+| Total Frames | 27,000+ |
+| Image Resolution (Test) | 3840×2160 (4K) |
+| Training Images | 4,800+ (1280×720 resolution) |
+| UAV Models | 6 types of fixed-wing UAVs |
+| Covered Challenges | 9 types (low resolution, motion blur, illumination variation, background clutter, viewpoint change, deformation, scale variation, rotation, fast moving) |
+| Annotation Format | JSON (bounding box coordinates: [x1, y1, x2, y2]) |
+
+### Dataset Distribution
+<p align="center">
+  <img src="./figures/dataset_distribution.png" width="600">
+  <br>
+  <em>Figure 3: Distribution of target scale and challenge types in UAV2UAV-2.</em>
+</p>
+
+---
+
+## 📊 Experimental Results
+### Quantitative Comparison
+We evaluate 24 trackers on UAV2UAV-2 (test set) and report key metrics (Precision@20px, Success Rate@IOU). Below are the top-performing methods:
+
+#### Top Hand-Crafted Feature-Based Trackers
+| Tracker | Precision (%) | Success Rate (%) |
+| :------ | :---: | :---: |
+| BiCF | 30.2 | 28.5 |
+| ReCF | 29.5 | 30.5 |
+| ECO | 27.5 | 28.5 |
+
+#### Top Deep Learning-Based Trackers (Original vs. Fine-Tuned)
+| Tracker | Precision (%) | Success Rate (%) |
+| :------ | :---: | :---: |
+| KYS | 65.1 | 60.7 |
+| **KYS-trained** | **65.8** | **61.6** |
+| PrDimp | 61.0 | 55.9 |
+| **PrDimp-trained** | **60.2** | **56.4** |
+| Dimp18 | 54.3 | 52.1 |
+| **Dimp18-trained** | **59.0** | **56.0** |
+
+### Qualitative Results
+<p align="center">
+  <img src="./figures/qualitative_results.png" width="600">
+  <br>
+  <em>Figure 4: Qualitative comparison of tracking results under illumination variation, scale change, and motion blur. KYS-trained outperforms other methods.</em>
+</p>
+
+---
+
+## 📥 Dataset Download
+The full dataset (test videos, training images, annotations) and pre-trained models are available on GitHub Releases:  
+[UAV2UAV-2 Dataset & Models](https://github.com/hapless19/UAV2UAV-2/releases)
+
+### Dataset Structure
