@@ -83,26 +83,13 @@ Existing datasets either lack training data, cover limited scenarios, or fail to
 
 ## 📊 Experimental Results
 ### Quantitative Comparison
-We evaluate 24 trackers on UAV2UAV-2 (test set) and report key metrics (Precision@20px, Success Rate@IOU). Below are the top-performing methods:
+<p align="center">
+  <img src="./figures/qualitative_results.png" width="600">
+  <br>
+  <em>Figure 4: Qualitative comparison of tracking results under illumination variation, scale change, and motion blur. KYS-trained outperforms other methods.</em>
+</p>
 
-#### Top Hand-Crafted Feature-Based Trackers
-| Tracker | Precision (%) | Success Rate (%) |
-| :------ | :---: | :---: |
-| BiCF | 30.2 | 28.5 |
-| ReCF | 29.5 | 30.5 |
-| ECO | 27.5 | 28.5 |
-
-#### Top Deep Learning-Based Trackers (Original vs. Fine-Tuned)
-| Tracker | Precision (%) | Success Rate (%) |
-| :------ | :---: | :---: |
-| KYS | 65.1 | 60.7 |
-| **KYS-trained** | **65.8** | **61.6** |
-| PrDimp | 61.0 | 55.9 |
-| **PrDimp-trained** | **60.2** | **56.4** |
-| Dimp18 | 54.3 | 52.1 |
-| **Dimp18-trained** | **59.0** | **56.0** |
-
-### Qualitative Results
+### Visualization
 <p align="center">
   <img src="./figures/qualitative_results.png" width="600">
   <br>
@@ -115,4 +102,11 @@ We evaluate 24 trackers on UAV2UAV-2 (test set) and report key metrics (Precisio
 The full dataset (test videos, training images, annotations) and pre-trained models are available on GitHub Releases:  
 [UAV2UAV-2 Dataset & Models](https://github.com/hapless19/UAV2UAV-2/releases)
 
-###📜 Citation
+## 📜 Citation
+If you find our work or dataset useful for your research, please cite:
+@inproceedings{li2025aerial,
+  title={Aerial Target Tracking: Benchmarking Algorithms on an Air-to-Air UAV Dataset},
+  author={Li, C. and Zhu, X. and Wang, Y. and Tang, W. and Ren, X. and Wu, S. and Wu, Z.},
+  booktitle={Proceedings of the IEEE International Conference on Robotics and Biomimetics (ROBIO)},
+  year={2025}
+}
