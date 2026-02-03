@@ -56,7 +56,7 @@ Existing datasets either lack training data, cover limited scenarios, or fail to
 ## 📸 Quick View (Dataset)
 ### Dataset Samples
 <p align="center">
-  <img src="./figures/challenge_samples.png" width="600">
+  <img src="figure/Examples.png" width="600">
   <br>
   <em>Figure 2: Sample frames from UAV2UAV-2, demonstrating key challenges (low resolution, motion blur, background clutter, etc.).</em>
 </p>
