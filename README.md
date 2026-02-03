@@ -67,7 +67,6 @@ Existing datasets either lack training data, cover limited scenarios, or fail to
 | Training Images | 4,800+ (1280×720 resolution) |
 | UAV Models | 6 types of fixed-wing UAVs |
 | Covered Challenges | 9 types (low resolution, motion blur, illumination variation, background clutter, viewpoint change, deformation, scale variation, rotation, fast moving) |
-| Annotation Format | JSON (bounding box coordinates: [x1, y1, x2, y2]) |
 
 
 
