@@ -83,7 +83,7 @@ Existing datasets either lack training data, cover limited scenarios, or fail to
 <p align="center">
   <img src="figure/Tracking_Result_UAV2UAV-12_HandCrafted.png" width="600">
   <br>
-  <em>Figure 4: Success and precisions plots of the tracking results on the UAV2UAV-1 and UAV2UAV-2 datasets with 11 kinds of hand-crafted based tracking algorithms.</em>
+  <em>Figure 4: Success and precisions plots of the tracking results on the UAV2UAV-1 and UAV2UAV-2 datasets with 11 kinds of hand-crafted based tracking algorithms.</em>
 </p>
 <p align="center">
   <img src="figure/Tracking_Result_UAV2UAV-2_DEEP.png" width="600">
@@ -93,7 +93,7 @@ Existing datasets either lack training data, cover limited scenarios, or fail to
 <p align="center">
   <img src="figure/Tracking_Result_UAV2UAV-12_DEEP.png" width="600">
   <br>
-  <em>Figure 6: Success and precisions plots of the tracking results on the UAV2UAV-1 and UAV2UAV-2 datasets with 15 kinds of deep-learning based tracking algorithms.</em>
+  <em>Figure 6: Success and precisions plots of the tracking results on the UAV2UAV-1 and UAV2UAV-2 datasets with 15 kinds of deep-learning based tracking algorithms.</em>
 </p>
 
 ### Visualization
@@ -107,13 +107,13 @@ Existing datasets either lack training data, cover limited scenarios, or fail to
 
 ## 📥 Dataset Download
 The full dataset (test videos, training images, annotations) and pre-trained models are available on GitHub Releases:  
-[UAV2UAV-2 Dataset ]
+[UAV2UAV-2 Dataset]
 
 ## 📜 Citation
 If you find our work or dataset useful for your research, please cite:
 @inproceedings{li2025aerial,
-  title={Aerial Target Tracking: Benchmarking Algorithms on an Air-to-Air UAV Dataset},
-  author={Li, C. and Zhu, X. and Wang, Y. and Tang, W. and Ren, X. and Wu, S. and Wu, Z.},
-  booktitle={Proceedings of the IEEE International Conference on Robotics and Biomimetics (ROBIO)},
+  title={Tracking A Fixed-Wing Unmanned Aerial Vehicle: An Experimental Evaluation},
+  author={Wang, Y. and Zhu, X. and Sun, Z. and Robert, L. and Lu, D.},
+  booktitle={},
   year={2025}
 }
