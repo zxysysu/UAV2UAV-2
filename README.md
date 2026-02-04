@@ -53,7 +53,7 @@ Existing datasets either lack training data, cover limited scenarios, or fail to
 ## 📸 Quick View (Dataset)
 ### Dataset Samples
 <p align="center">
-  <img src="figure/Examples.png" width="600">
+  <img src="figure/uav_collage_efficient.jpg" width="600">
   <br>
   <em>Figure 2: Sample frames from UAV2UAV-2.</em>
 </p>
