@@ -106,7 +106,7 @@ Existing datasets either lack training data, cover limited scenarios, or fail to
 
 ## 📥 Dataset Download
 The full dataset (test videos, training images, annotations) and pre-trained models are available on GitHub Releases:  
-[UAV2UAV-2 Dataset]
+https://pan.baidu.com/s/19o4sJNPtijC_qxuo1RwwTw?pwd=gsnu.
 
 ## 📜 Citation
 If you find our work or dataset useful for your research, please cite:
